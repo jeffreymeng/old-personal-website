@@ -1,0 +1,12 @@
+
+<svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+@font-face {
+    font-family: "Sample font";
+    src: url("data:application/font-woff;charset=utf-8;base64,...");
+}
+</style>
+<text x="100" y="100" style="color:#fed136; font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; font-weight: normal; font-style: normal">
+   Jeffrey Meng
+</text>     
+</svg>
