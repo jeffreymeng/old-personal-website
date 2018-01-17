@@ -25,9 +25,11 @@
     <link href="/css/agency.min.css" rel="stylesheet">
 
     <!-- Font Awesome 5 Pro 5.0.0rc4-->
-    <script defer src="/fonts/font-awesome/js/packs/brands.min.js"></script>
-    <script defer src="/fonts/font-awesome/js/packs/regular.min.js"></script>
-    <script defer src="/fonts/font-awesome/js/fontawesome.min.js"></script>
+    <script defer src="/fonts/font-awesome/js/fa-brands.min.js"></script>
+    <script defer src="/fonts/font-awesome/js/fa-regular.min.js"></script>
+    <script defer src="/fonts/font-awesome/js/fa-solid.min.js"></script>
+
+    <script src="/fonts/font-awesome/js/fontawesome.min.js"></script>
 
 </head>
 
@@ -36,7 +38,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="/">Jeffrey Meng</a>
+            <a class="navbar-brand js-scroll-trigger" href="/#page-top">Jeffrey Meng</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -44,42 +46,59 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/">Home</a>
+                        <a class="nav-link js-scroll-trigger" href="/#me">Me</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/projects/">All Projects</a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header">Featured Projects</h6>
+
+                            <a class="dropdown-item" href="https://techedit.jeffkmeng.com">Techedit</a>
+                            <a class="dropdown-item" href="https://encryption.jeffkmeng.com">Simple Encryption</a>
+
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header">Small Projects and Sites</h6>
+
+                            <a class="dropdown-item" href="/quickcopy/">Quick Code Snippets</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
 
-
-    <!-- Services -->
-    <section id="me">
+    <section id="content">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Template</h2>
-                    <h3 class="section-subheading text-muted">A simple template for quickly creating pages.</h3>
+                    <h3 class="section-subheading text-muted">(For internal use) - Used to quickly make pages.</h3>
                 </div>
             </div>
-             <div class="row">
-                <div class="col-md-12">
-                    
-                    <p>Test text can go here</p>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <p>
+                        Hi. More page content goes here.
+                    </p>
                 </div>
-                
             </div>
         </div>
     </section>
 
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Jeffrey Meng 2017</span>
+                    <span class="copyright">Copyright &copy; Jeffrey Meng 2017-2018</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -97,19 +116,14 @@
                             <li class="list-inline-item">
                                 <a href="/sitemap/">Sitemap</a>
                             </li>
-                            <!--
-                            <li class="list-inline-item">
-                                <a href="#">Terms of Use</a>
-                            </li>
-                            -->
+
+
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-
 
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script>
@@ -132,9 +146,6 @@
     <!-- Plugin JavaScript -->
     <script src="/js/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="/js/jqBootstrapValidation.js"></script>
-    <script src="/js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="/js/agency.min.js"></script>
