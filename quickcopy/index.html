@@ -187,9 +187,13 @@ String.prototype.replaceAll = function(search, replacement) {
     <!-- Plugin JavaScript -->
     <script src="/js/jquery.easing.min.js"></script>
     
-    <!-- Prism JavaScript -->
-    <script src="/js/prism.min.js"></script>
 
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/prism.min.js"></script>
+    <script>
+    /* global Clipboard */
+        new Clipboard('.clipboard');
+    </script>
 
     <!-- Custom scripts for this template -->
     <script src="/js/agency.min.js"></script>
