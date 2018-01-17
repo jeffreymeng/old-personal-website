@@ -30,14 +30,37 @@
     <script defer src="/fonts/font-awesome/js/fa-solid.min.js"></script>
 
     <script src="/fonts/font-awesome/js/fontawesome.min.js"></script>
-    
+
     <!-- Prism CSS -->
     <link href="/css/prism.min.css" rel='stylesheet' type='text/css'>
-    
-	<!--   Custom Website Style -->
-	<link href="/css/index.css" rel='stylesheet' type='text/css'>
 
+    <!--   Custom Website Style -->
+    <link href="/css/index.css" rel='stylesheet' type='text/css'>
 
+    <style>
+        pre {
+            display: block;
+            padding: 9.5px;
+            margin: 0 0 10px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            word-break: break-all;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        pre code {
+            padding: 0;
+            font-size: inherit;
+            color: inherit;
+            white-space: pre-wrap;
+            background-color: transparent;
+            border-radius: 0;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -93,7 +116,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <b>Contents</b> 
+                    <b>Contents</b>
                     <ul class="text-left">
                         <li><a href="#getquery">GetQuery(JS)</a></li>
                         <li><a href="#replaceall">replaceAll(JS)</a></li>
@@ -101,7 +124,8 @@
                     </ul>
                     <hr>
                     <a name="getquery" class="anchor"></a>
-                    <b>GetQuery (Javascript) <a class="clipboard" data-clipboard-target="#getquery">Copy</a> | <a href="#getquery-a">Permalink</a> | <a href="http://stackoverflow.com/a/901144/5511561">This function's source</a></b><!-- Trigger -->
+                    <b>GetQuery (Javascript) <a class="clipboard" data-clipboard-target="#getquery">Copy</a> | <a href="#getquery-a">Permalink</a> | <a href="http://stackoverflow.com/a/901144/5511561">This function's source</a></b>
+                    <!-- Trigger -->
 
                     <pre><code class="language-javascript line-numbers" id="getquery">
 //http://stackoverflow.com/a/901144/5511561
@@ -115,9 +139,10 @@ function getQuery(name) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
                         </code></pre>
-                        <hr>
-                        <a name="replaceall"></a>
-<b>replaceAll (Javascript) <a class="clipboard" data-clipboard-target="#replaceall">Copy</a> | <a href="#replaceall-a">Permalink</a> | <a href="http://stackoverflow.com/a/17606289/5511561">This function's source</a></b><!-- Trigger -->
+                    <hr>
+                    <a name="replaceall"></a>
+                    <b>replaceAll (Javascript) <a class="clipboard" data-clipboard-target="#replaceall">Copy</a> | <a href="#replaceall-a">Permalink</a> | <a href="http://stackoverflow.com/a/17606289/5511561">This function's source</a></b>
+                    <!-- Trigger -->
 
                     <pre><code class="language-javascript line-numbers" id="replaceall">
 //http://stackoverflow.com/a/17606289/5511561s
@@ -126,12 +151,13 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.replace(new RegExp(search, 'g'), replacement);
 };
                         </code></pre>
-                        <hr>
-                        <a name="htmlredirect"></a>
-                        <b>Html Redirect (HTML) <a class="clipboard" data-clipboard-target="#htmlredirect">Copy</a> | <a href="#htmlredirect-a">Permalink</a> | <a href="http://stackoverflow.com/a/5411567/5511561">This function's source</a></b><!-- Trigger -->
+                    <hr>
+                    <a name="htmlredirect"></a>
+                    <b>Html Redirect (HTML) <a class="clipboard" data-clipboard-target="#htmlredirect">Copy</a> | <a href="#htmlredirect-a">Permalink</a> | <a href="http://stackoverflow.com/a/5411567/5511561">This function's source</a></b>
+                    <!-- Trigger -->
 
                     <pre><code class="language-javascript line-numbers" id="htmlredirect">&lt;meta http-equiv="refresh" content="0; url=http://example.com/page/page.html" /></code></pre>
-                
+
                 </div>
             </div>
         </div>
@@ -188,18 +214,18 @@ String.prototype.replaceAll = function(search, replacement) {
 
     <!-- Plugin JavaScript -->
     <script src="/js/jquery.easing.min.js"></script>
-    
+
 
     <script src="/js/clipboard.min.js"></script>
     <script src="/js/prism.min.js"></script>
     <script>
-    /* global Clipboard */
+        /* global Clipboard */
         new Clipboard('.clipboard');
     </script>
 
-    
+
     <!-- Custom scripts for this website -->
-	<script src="/js/index.js"></script>
+    <script src="/js/index.js"></script>
 
 </body>
 
