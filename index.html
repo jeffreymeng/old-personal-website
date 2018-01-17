@@ -25,8 +25,8 @@
 	<link href="/css/agency.min.css" rel="stylesheet">
 
 	<!-- Font Awesome 5 Pro 5.0.0rc4-->
-	<script defer src="/fonts/font-awesome/js/packs/brands.min.js"></script>
-	<script defer src="/fonts/font-awesome/js/packs/regular.min.js"></script>
+	<script defer src="/fonts/font-awesome/js/fa-brands.min.js"></script>
+	<script defer src="/fonts/font-awesome/js/fa-regular.min.js"></script>
 	<script src="/fonts/font-awesome/js/fontawesome.min.js"></script>
 
 </head>
@@ -51,6 +51,22 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="/projects/">All Projects</a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header">Featured Projects</h6>
+
+							<a class="dropdown-item" href="https://techedit.jeffkmeng.com">Techedit</a>
+							<a class="dropdown-item" href="https://encryption.jeffkmeng.com">Simple Encryption</a>
+
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header">Small Projects and Sites</h6>
+
+							<a class="dropdown-item" href="/quickcopy/">Quick Code Snippets</a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -85,8 +101,8 @@
 				</div>
 				<div class="col-md-4">
 					<img src="/img/programming-languages/python.png" alt="Python Logo" height="175" width="175">
-						<h4 class="service-heading">Python</h4>
-						<p class="text-muted">With Python, you can <a href="https://xkcd.com/353/" target="_blank">fly</a>!</p>
+					<h4 class="service-heading">Python</h4>
+					<p class="text-muted">With Python, you can <a href="https://xkcd.com/353/" target="_blank">fly</a>!</p>
 				</div>
 				<div class="col-md-4">
 					<img src="/img/programming-languages/html.png" alt="HTML Logo" height="175" width="175">
@@ -149,7 +165,7 @@
 						<p class="text-muted">Simple Encryption Client</p>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
@@ -206,7 +222,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<span class="copyright">Copyright &copy; Jeffrey Meng 2017</span>
+					<span class="copyright">Copyright &copy; Jeffrey Meng 2017-2018</span>
 				</div>
 				<div class="col-md-4">
 					<ul class="list-inline social-buttons">
@@ -216,150 +232,148 @@
 		                  	<i class="fab fa-github"></i>
 		                </a>
 						</li>
-					</ul>
+						</ul>
 				</div>
 				<div class="col-md-4">
-                    <div class="col-md-4">
-                        <ul class="list-inline quicklinks">
-                            <li class="list-inline-item">
-                                <a href="/sitemap/">Sitemap</a>
-                            </li>
-				<li class="list-inline-item">
-                                <a href="https://pgp.jeffkmeng.com/">PGP Public Key</a>
-                            </li>
-                            <!--
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li class="list-inline-item">
+								<a href="/sitemap/">Sitemap</a>
+							</li>
+
+							<!--
                             <li class="list-inline-item">
                                 <a href="#">Terms of Use</a>
                             </li>
                             -->
-                        </ul>
-                    </div>
-                </div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Portfolio Modals -->
-
-	<!-- Modal 1 -->
-	<div class="portfolio-modal modal fade" id="portfolioTechedit" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
+						</ul>
 					</div>
 				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2><a href="https://techedit.jeffkmeng.com">Techedit</a></h2>
-								<p class="item-intro text-muted">A collaborative code editor in the cloud.</p>
-								<img class="img-fluid d-block mx-auto" src="img/portfolio/techedit.jpg" alt="">
-								<p><a href="https://techedit.jeffkmeng.com">Techedit</a> is a collaborative code editor based on the cloud. Share code, work together remotely, and structure interviews. Techedit is a must have tool for all social developers.</p>
+			</div>
+		</div>
+		</footer>
 
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+		<!-- Portfolio Modals -->
+
+		<!-- Modal 1 -->
+		<div class="portfolio-modal modal fade" id="portfolioTechedit" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<div class="modal-body">
+									<!-- Project Details Go Here -->
+									<h2><a href="https://techedit.jeffkmeng.com">Techedit</a></h2>
+									<p class="item-intro text-muted">A collaborative code editor in the cloud.</p>
+									<img class="img-fluid d-block mx-auto" src="img/portfolio/techedit.jpg" alt="">
+									<p><a href="https://techedit.jeffkmeng.com">Techedit</a> is a collaborative code editor based on the cloud. Share code, work together remotely, and structure interviews. Techedit is a must have tool for all social developers.</p>
+
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Modal 2 -->
-	<div class="portfolio-modal modal fade" id="portfolioPOS" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
+		<!-- Modal 2 -->
+		<div class="portfolio-modal modal fade" id="portfolioPOS" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
 					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Jeffrey Point of sale</h2>
-								<p class="item-intro text-muted">Not avaliable for public use.</p>
-								<img class="img-fluid d-block mx-auto" src="img/portfolio/pos.jpg" alt="">
-								<p>The jeffrey point of sale system accepts barcode and keyboard inputs, is optimized for two screen display, where the first is for the cashier, and the second is for the customer. The customer display is optimized for tablets and computers. You
-									can contact me if you want to view this project.</p>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<div class="modal-body">
+									<!-- Project Details Go Here -->
+									<h2>Jeffrey Point of sale</h2>
+									<p class="item-intro text-muted">Not avaliable for public use.</p>
+									<img class="img-fluid d-block mx-auto" src="img/portfolio/pos.jpg" alt="">
+									<p>The jeffrey point of sale system accepts barcode and keyboard inputs, is optimized for two screen display, where the first is for the cashier, and the second is for the customer. The customer display is optimized for tablets and computers. You
+										can contact me if you want to view this project.</p>
 
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Modal 3 -->
-	<div class="portfolio-modal modal fade" id="portfolioEncryption" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
+		<!-- Modal 3 -->
+		<div class="portfolio-modal modal fade" id="portfolioEncryption" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
 					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2><a href="https://encryption.jeffkmeng.com">Jeffrey Encryption</a></h2>
-								<p class="item-intro text-muted">Quick, yet secure encryption.</p>
-								<img class="img-fluid d-block mx-auto" src="img/portfolio/encryption.jpg" alt="">
-								<p><a href="https://encryption.jeffkmeng.com">Jeffrey Encryption</a> is a simple, secure, easy to use encryption client powered by <a href="http://bitwiseshiftleft.github.io/sjcl/">SJCL</a>.</p>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<div class="modal-body">
+									<!-- Project Details Go Here -->
+									<h2><a href="https://encryption.jeffkmeng.com">Jeffrey Encryption</a></h2>
+									<p class="item-intro text-muted">Quick, yet secure encryption.</p>
+									<img class="img-fluid d-block mx-auto" src="img/portfolio/encryption.jpg" alt="">
+									<p><a href="https://encryption.jeffkmeng.com">Jeffrey Encryption</a> is a simple, secure, easy to use encryption client powered by <a href="http://bitwiseshiftleft.github.io/sjcl/">SJCL</a>.</p>
 
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
 
-	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-	<script>
-		// Initialize Firebase
-		var config = {
-			apiKey: "AIzaSyDSCVcPcMzCXMjGhQvQJfkgnjCFzzewTgA",
-			authDomain: "jmeng.firebaseapp.com",
-			databaseURL: "https://jmeng.firebaseio.com",
-			projectId: "project-4679594405675385181",
-			storageBucket: "project-4679594405675385181.appspot.com",
-			messagingSenderId: "590199481216"
-		};
-		firebase.initializeApp(config);
-	</script>
-	<!-- Bootstrap core JavaScript -->
-	<script src="/js/jquery.min.js"></script>
-	<script src="/js/popper.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
 
-	<!-- Plugin JavaScript -->
-	<script src="/js/jquery.easing.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyDSCVcPcMzCXMjGhQvQJfkgnjCFzzewTgA",
+				authDomain: "jmeng.firebaseapp.com",
+				databaseURL: "https://jmeng.firebaseio.com",
+				projectId: "project-4679594405675385181",
+				storageBucket: "project-4679594405675385181.appspot.com",
+				messagingSenderId: "590199481216"
+			};
+			firebase.initializeApp(config);
+		</script>
+		<!-- Bootstrap core JavaScript -->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/popper.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
 
-	<!-- Contact form JavaScript -->
-	<script src="/js/jqBootstrapValidation.js"></script>
-	<script src="/js/contact_me.js"></script>
+		<!-- Plugin JavaScript -->
+		<script src="/js/jquery.easing.min.js"></script>
 
-	<!-- Custom scripts for this template -->
-	<script src="/js/agency.min.js"></script>
+		<!-- Contact form JavaScript -->
+		<script src="/js/jqBootstrapValidation.js"></script>
+		<script src="/js/contact_me.js"></script>
+
+		<!-- Custom scripts for this template -->
+		<script src="/js/agency.min.js"></script>
 
 </body>
 
