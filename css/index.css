@@ -15,6 +15,7 @@ body {
 .container {
     min-height: 100%;
     height: auto !important;
+    margin-top:-70px;
     margin-bottom: -50px;
     /* the bottom margin is the negative value of the footer's total height */
 }
@@ -30,6 +31,7 @@ body {
 
 .footer {
     height: 50px;
+    background-color:#222222;
     /* the footer's total height */
 }
 
