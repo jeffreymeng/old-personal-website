@@ -120,6 +120,7 @@
                     <ul class="text-left">
                         <li><a href="#getquery">GetQuery(JS)</a></li>
                         <li><a href="#replaceall">replaceAll(JS)</a></li>
+                        <li><a href="#loopthroughobject">Loop Through Object(JS)</a></li>
                         <li><a href="#htmlredirect">Html Redirect(HTML)</a></li>
                     </ul>
                     <hr>
@@ -150,6 +151,19 @@ String.prototype.replaceAll = function(search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
 };
+                        </code></pre>
+                    <hr>
+                    <a name="loopthroughobject-a"></a>
+                    <b>Loop Through Object (Javascript) <a class="clipboard" data-clipboard-target="#loopthroughobject" href="#">Copy</a> | <a href="#loopthroughobject-a">Permalink</a> | <a href="https://stackoverflow.com/a/684692/5511561">This function's source</a></b>
+                    <!-- Trigger -->
+
+                    <pre><code class="language-javascript line-numbers" id="loopthroughobject">
+//https://stackoverflow.com/a/684692/5511561
+for (var key in p) {
+    if (p.hasOwnProperty(key)) {
+        console.log(key + " -> " + p[key]);
+    }
+}
                         </code></pre>
                     <hr>
                     <a name="htmlredirect"></a>
