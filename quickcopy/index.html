@@ -158,10 +158,11 @@ String.prototype.replaceAll = function(search, replacement) {
                     <!-- Trigger -->
 
                     <pre><code class="language-javascript line-numbers" id="loopthroughobject">
-//https://stackoverflow.com/a/684692/5511561
-for (var key in p) {
-    if (p.hasOwnProperty(key)) {
-        console.log(key + " -> " + p[key]);
+//https://stackoverflow.com/a/684692/5511561 (slightly adapted)
+for (var key in myObject) {
+    if (myObject.hasOwnProperty(key)) {
+        console.log(key + " -> " + myObject[key]);
+        // key -> value
     }
 }
                         </code></pre>
