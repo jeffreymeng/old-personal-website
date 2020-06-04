@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multiple Choice Checker</title>
+</head>
+<body>
+<p>
+    How to use: Open the console and define ans as a string array with the correct answers.
+</p>
+<script>
+
+  let ans = "ABCCADE".split("");
+    let skipLetter = "S";
+  function compare(q, a) {
+    return a == ans[q - 1];
+  }
+
+  function check(rangeStart, rangeFinish, ans) {
+
+    if (!ans) {
+      ans = rangeFinish;
+      rangeFinish = rangeStart + ans.length - 1;
+    }
+    ans = ans.split("");
+
+    if (1 + rangeFinish - rangeStart != ans.length) throw "Input Error";
+    for (let i = 0; i < ans.length; i++) {
+      if (!compare(i + rangeStart, ans[i]) && ans[i] !== skipLetter) return "FAIL";
+    }
+    return "PASS";
+  }
+
+  function peek(rangeStart, rangeFinish, ans) {
+    let ret = "";
+    if (!ans) {
+      ans = rangeFinish;
+      rangeFinish = rangeStart + ans.length - 1;
+    }
+    ans = ans.split("");
+
+    if (1 + rangeFinish - rangeStart != ans.length) throw "Input Error";
+    for (let i = 0; i < ans.length; i++) {
+      if (!compare(i + rangeStart, ans[i]) && ans[i] !== skipLetter)) ret += "X";
+
+      else {
+        ret += "P";
+      }
+    }
+    return ret;
+  }
+
+  function count(rangeStart, rangeFinish, ans) {
+    let ret = 0;
+    if (!ans) {
+      ans = rangeFinish;
+      rangeFinish = rangeStart + ans.length - 1;
+    }
+    ans = ans.split("");
+
+    if (1 + rangeFinish - rangeStart != ans.length) throw "Input Error";
+    for (let i = 0; i < ans.length; i++) {
+      if (!compare(i + rangeStart, ans[i]) && ans[i] !== skipLetter)) ret++;
+    }
+    return ret;
+  }
+</script>
+</body>
+</html>
